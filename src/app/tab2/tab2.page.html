@@ -1,17 +1,60 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Daftar Series Populer
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-accordion-group>
+    <ion-accordion value="first">
+      <ion-item slot="header" color="light">
+        <ion-label>Barat</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">Wednesday Season 2</div>
+      <div class="ion-padding" slot="content">The Summer Turned Pretty Season 3</div>
+      <div class="ion-padding" slot="content">Submission</div>
+      <div class="ion-padding" slot="content">The Terminal List: Dark Wolf</div>
+      <div class="ion-padding" slot="content">Untamed</div>
+    </ion-accordion>
+    <ion-accordion value="second">
+      <ion-item slot="header" color="light">
+        <ion-label>Jepang </ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">Cinderella Closet</div>
+      <div class="ion-padding" slot="content">The Yakuza Boss's Beloved</div>
+      <div class="ion-padding" slot="content">Glass Heart</div>
+      <div class="ion-padding" slot="content">Alice in Bonderland Season 2</div>
+      <div class="ion-padding" slot="content">One Piece </div>
+    </ion-accordion>
+    <ion-accordion value="third">
+      <ion-item slot="header" color="light">
+        <ion-label>Korea </ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">Trigger</div>
+      <div class="ion-padding" slot="content">Boys II Planet</div>
+      <div class="ion-padding" slot="content">The Judge from Hell</div>
+      <div class="ion-padding" slot="content">Good Boy</div>
+      <div class="ion-padding" slot="content">Taxi Driver</div>
+    </ion-accordion>
+    <ion-accordion value="fourth">
+      <ion-item slot="header" color="light">
+        <ion-label>Thailand </ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">Hormones</div>
+      <div class="ion-padding" slot="content">The Gifted</div>
+      <div class="ion-padding" slot="content">Girl From Nowhere</div>
+    </ion-accordion>
+    <ion-accordion value="fifth">
+      <ion-item slot="header" color="light">
+        <ion-label>Anime </ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">Kimetsu No Yaiba: Infinite Castle</div>
+      <div class="ion-padding" slot="content">DanDaDan</div>
+      <div class="ion-padding" slot="content">Wind Breaker</div>
+      <div class="ion-padding" slot="content">Naruto Shippuden</div>
+      <div class="ion-padding" slot="content">Attack on Titan</div>
+    </ion-accordion>
+  </ion-accordion-group>
 </ion-content>
