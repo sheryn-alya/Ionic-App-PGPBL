@@ -4,7 +4,7 @@
       <ion-back-button defaultHref="/maps"></ion-back-button>
     </ion-buttons>
 
-    <ion-title>Tambah Titik</ion-title>
+    <ion-title>{{ isEditMode ? 'Edit Point' : 'Tambah Titik' }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -20,6 +20,6 @@
     <ion-label position="floating">Coordinates</ion-label>
     <ion-input [(ngModel)]="coordinates"></ion-input>
   </ion-item>
-  <ion-button expand="full" (click)="save()">Save</ion-button>
+  <ion-button expand="full" (click)="save()">{{ isEditMode ? 'Update' : 'Save' }}</ion-button>
 
 </ion-content>
